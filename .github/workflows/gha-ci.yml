@@ -30,8 +30,6 @@ jobs:
         7z.exe x vendor/wxMSW-3.1.4_vc14x_x64_ReleaseDLL.7z -ovendor/wxwidgets
         7z.exe x vendor/microsoft.xaudio2.redist.1.2.4.nupkg -ovendor/xaudio2
 
-        Remove-Item –path C:\vcpkg\installed\x64-windows\debug –recurse
-
     - name: debug
       run: |
         cd vendor
