@@ -5,6 +5,8 @@ project(Aegisub)
 
 list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake")
 
+find_package(wxWidgets REQUIRED adv base core gl stc xml)
+
 # Explicitly set the build type to Release if no other type is specified
 # on the command line.  Without this, cmake defaults to an unoptimized,
 # non-debug build, which almost nobody wants.
@@ -521,7 +523,6 @@ find_package(ICU REQUIRED uc)
 target_link_libraries(libaegisub PRIVATE "ICU::uc")
 target_link_libraries(Aegisub PRIVATE "ICU::uc")
 
-find_package(wxWidgets REQUIRED adv base core gl stc xml)
 include(${wxWidgets_USE_FILE})
 target_link_libraries(Aegisub LINK_PRIVATE ${wxWidgets_LIBRARIES})
 
