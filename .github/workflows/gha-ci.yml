@@ -18,7 +18,7 @@ jobs:
         Invoke-WebRequest -Uri https://github.com/AviSynth/AviSynthPlus/releases/download/v3.6.1/AviSynthPlus_3.6.1_20200619-filesonly.7z -OutFile vendor/AviSynthPlus_3.6.1_20200619-filesonly.7z
         Invoke-WebRequest -Uri https://github.com/FFMS/ffms2/releases/download/2.23/ffms2-2.23.1-msvc.7z -OutFile vendor/ffms2-2.23.1-msvc.7z
         Invoke-WebRequest -Uri https://github.com/wxWidgets/wxWidgets/releases/download/v3.1.4/wxWidgets-3.1.4-headers.7z -OutFile vendor/wxWidgets-3.1.4-headers.7z
-        Invoke-WebRequest -Uri https://github.com/wxWidgets/wxWidgets/releases/download/v3.1.4/wxMSW-3.1.4_vc14x_x64_Dev.7z -OutFile vendor/wxMSW-3.1.4_vc14x_Dev.7z
+        Invoke-WebRequest -Uri https://github.com/wxWidgets/wxWidgets/releases/download/v3.1.4/wxMSW-3.1.4_vc14x_x64_Dev.7z -OutFile vendor/wxMSW-3.1.4_vc14x_x64_Dev.7z
         Invoke-WebRequest -Uri https://github.com/wxWidgets/wxWidgets/releases/download/v3.1.4/wxMSW-3.1.4_vc14x_x64_ReleaseDLL.7z -OutFile vendor/wxMSW-3.1.4_vc14x_x64_ReleaseDLL.7z
         Invoke-WebRequest -Uri https://globalcdn.nuget.org/packages/microsoft.xaudio2.redist.1.2.4.nupkg -OutFile vendor/microsoft.xaudio2.redist.1.2.4.nupkg
 
