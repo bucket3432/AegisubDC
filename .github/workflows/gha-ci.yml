@@ -37,7 +37,7 @@ jobs:
         7z.exe x vendor/microsoft.xaudio2.redist.1.2.4.nupkg -ovendor/xaudio2
 
         vcpkg.exe install --triplet x64-windows boost-asio boost-container boost-crc boost-filesystem boost-flyweight boost-gil boost-interprocess 'boost-locale[icu]' 'boost-regex[icu]' boost-scope-exit boost-thread fftw3 hunspell icu libass libiconv uchardet gtest
-        Remove-Item –path C:\vcpkg\installed\x64-windows\debug –recurse
+        Remove-Item –Path C:\vcpkg\installed\x64-windows\debug –Recurse -ErrorAction SilentlyContinue
 
     - name: configure
       run: |
