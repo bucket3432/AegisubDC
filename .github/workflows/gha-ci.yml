@@ -15,8 +15,8 @@ jobs:
     - name: cache vcpkg packages
       uses: actions/cache@v2
       with:
-        path: C:\vcpkg\packages
-        key: vcpkg-packages-x64-windows
+        path: C:\vcpkg\installed
+        key: vcpkg-installed-x64-windows
 
     - name: install deps
       run: |
