@@ -35,13 +35,20 @@ Open the newly created `bin/moonscript.lua`, and within it make the following ch
 
 The file is now ready for use, to be placed in `automation/include` within the Aegisub repo.
 
-## Expanding the Git history
+## Migrating from the old repository
 
-The Git history of this project is truncated.
-To fetch and graft the remaining history, run the following command (replace `origin` with the appropriate remote name as necessary):
+The history of this repository has been rewritten.
+To migrate to the new repo, either re-clone the repo or fetch the replacement objects using the following command (replace `origin` with the appropriate remote name as necessary):
 
 ```sh
 git fetch origin "+refs/replace/*:refs/replace/*"
+```
+
+Then rebase the `master` branch:
+
+```sh
+git fetch origin
+git rebase origin/master master
 ```
 
 ## License
